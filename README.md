@@ -1,7 +1,7 @@
 # 🛠️ AI Code Audit
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status]
+
 
 `Aicodecheker` is a simple command-line tool (CLI) static analysis to help developers find potential problems, *code smells*, and security risks in JavaScript code.
 
