@@ -1,12 +1,16 @@
-# 📖 README (update dengan section baru)
-
-````markdown
 # 🛠️ AI Code Audit
 
-AI-powered CLI tool untuk mengecek kualitas code JavaScript/TypeScript kamu secara otomatis.  
-Tujuannya: membantu developer menemukan potensi bug, code smell, dan memberikan saran perbaikan.
+[![NPM Version](https://img.shields.io/npm/v/aicodeaudit.svg)](https://www.npmjs.com/package/aicodeaudit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/username/aicodeaudit/ci.yml?branch=main)](https://github.com/username/aicodeaudit/actions)
 
----
+`aicodeaudit` adalah sebuah command-line tool (CLI) static analysis sederhana untuk membantu developer menemukan potensi masalah, *code smell*, dan risiko keamanan dalam kode JavaScript.
+
+## ✨ Fitur
+
+- Deteksi *hardcoded secrets* (password, API key).
+- Menemukan penggunaan fungsi yang tidak aman seperti `eval()` dan `document.write()`.
+- Mudah diperluas dengan aturan-aturan baru.
 
 ## 🚀 Instalasi
 
@@ -16,7 +20,7 @@ Tujuannya: membantu developer menemukan potensi bug, code smell, dan memberikan 
    cd ~/Code
    git clone https://github.com/username/aicodeaudit.git
    cd aicodeaudit
-````
+   ```
 
 2. Install dependencies:
 
@@ -30,22 +34,11 @@ Tujuannya: membantu developer menemukan potensi bug, code smell, dan memberikan 
    npm link
    ```
 
----
-
-## 📂 Dimana Harus Clone?
-
-Kamu bisa **clone di folder mana saja**. Contoh:
-
-* **macOS/Linux**: `~/Code/` atau `~/Projects/`
-* **Windows**: `C:\Users\<username>\Projects\`
-
-Setelah clone + `npm link`, command `aicodeaudit` bisa dipakai dari **folder mana pun** di komputer kamu.
-
----
+> **Catatan**: Setelah `npm link`, command `aicodeaudit` bisa dijalankan dari direktori mana pun di sistem Anda.
 
 ## 🧑‍💻 Cara Pakai
 
-Audit file JavaScript/TypeScript:
+Jalankan audit pada sebuah file JavaScript:
 
 ```bash
 aicodeaudit test/sample.js
@@ -57,8 +50,6 @@ Audit seluruh folder project:
 aicodeaudit ./src
 ```
 
----
-
 ## ✨ Contoh Output
 
 ```
@@ -67,22 +58,8 @@ aicodeaudit ./src
 💡 Suggestion: Consider removing or using the variable
 ```
 
----
-
 ## 🤝 Kontribusi
 
 Pull request dan issue selalu terbuka!
 Kalau ada ide fitur baru (misalnya dukungan untuk Python, Go, atau integrasi langsung dengan GitHub Actions), silakan ajukan.
 
----
-
-## 📜 License
-
-MIT
-
-```
-
----
-
-Apakah mau aku bikinin juga **contoh badge keren di atas README** (misalnya npm version, license, build passing) biar kelihatan profesional ala open-source project populer?
-```
