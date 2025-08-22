@@ -16,8 +16,7 @@
 
    ```bash
    cd ~/Code
-   git clone https://github.com/sakhandaru/AicodeChecker
-.git
+   git clone https://github.com/sakhandaru/Aicodechecker.git
    cd AicodeChecker
 
    ```
@@ -89,8 +88,7 @@ If you have ideas for new features (e.g., support for Python, Go, or direct inte
 
    ```bash
    cd ~/Code
-   git clone https://github.com/sakhandaru/AicodeChecker
-.git
+   git clone https://github.com/sakhandaru/Aicodechecker.git
    cd AicodeChecker
 
    ```
