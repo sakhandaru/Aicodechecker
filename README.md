@@ -1,8 +1,78 @@
 # 🛠️ AI Code Audit
 
-[![NPM Version](https://img.shields.io/npm/v/aicodeaudit.svg)](https://www.npmjs.com/package/aicodeaudit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/username/aicodeaudit/ci.yml?branch=main)](https://github.com/username/aicodeaudit/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/username/aicodeaudit/ci.yml?branch=main)](https://github.com/sakhandaru/Aicocheker/actions)
+
+`aicodeaudit` is a simple command-line tool (CLI) static analysis to help developers find potential problems, *code smells*, and security risks in JavaScript code.
+
+## ✨ Features
+
+- Detects *hardcoded secrets* (passwords, API keys).
+- Finds insecure function usage like `eval()` and `document.write()`.
+- Easily extendable with new rules.
+
+## 🚀 Installation
+
+1. Clone the repository (anywhere you like, e.g., `~/Code`):
+
+   ```bash
+   cd ~/Code
+   git clone https://github.com/username/aicodeaudit.git
+   cd aicodeaudit
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Link the package to make it globally available:
+
+   ```bash
+   npm link
+   ```
+
+> **Note**: After running `npm link`, the `aicodeaudit` command will be available from any directory in your system.
+
+## 🧑‍💻 Usage
+
+Audit a single JavaScript file:
+
+```bash
+aicodeaudit test/sample.js
+```
+
+Audit an entire project folder:
+
+```bash
+aicodeaudit ./src
+```
+
+## ✨ Example Output
+
+Based on the provided `test/sample.js`, the output will be:
+
+```
+🔍 Audit file: test/sample.js
+
+❌ [Line 2] 🚨 Hardcoded password ditemukan
+   const password = "12345";
+❌ [Line 3] 🚨 Hardcoded API key ditemukan
+   const apiKey = "my-secret-key";
+❌ [Line 4] ⚠️  Penggunaan eval() berbahaya
+   eval("console.log('halo')");
+❌ [Line 5] ⚠️  Hindari document.write(), gunakan DOM API modern
+   document.write("Hello");
+```
+
+## 🤝 Contributing
+
+Pull requests and issues are always welcome!
+If you have ideas for new features (e.g., support for Python, Go, or direct integration with GitHub Actions), feel free to open an issue.
+
+
+## 🇮🇩 Versi Bahasa Indonesia
 
 `aicodeaudit` adalah sebuah command-line tool (CLI) static analysis sederhana untuk membantu developer menemukan potensi masalah, *code smell*, dan risiko keamanan dalam kode JavaScript.
 
@@ -52,6 +122,8 @@ aicodeaudit ./src
 
 ## ✨ Contoh Output
 
+Berdasarkan file `test/sample.js`, outputnya akan seperti ini:
+
 ```
 [+] Analyzing test/sample.js ...
 ⚠️  Line 12: Possible unused variable
@@ -62,4 +134,3 @@ aicodeaudit ./src
 
 Pull request dan issue selalu terbuka!
 Kalau ada ide fitur baru (misalnya dukungan untuk Python, Go, atau integrasi langsung dengan GitHub Actions), silakan ajukan.
-
