@@ -1,0 +1,13 @@
+{
+  "name": "aicodeaudit",
+  "version": "0.1.0",
+  "description": "🔍 Simple static analyzer untuk mendeteksi bad practices dan risiko keamanan",
+  "bin": {
+    "aicodeaudit": "./bin/cli.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  }
+}
