@@ -1,8 +1,8 @@
-# 🛠️ AI Code Cheker
+# 🛠️ AI Code Checker
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-`Aicodecheker` is a simple command-line tool (CLI) static analysis to help developers find potential problems, *code smells*, and security risks in JavaScript code.
+`AicodeChecker` is a simple command-line tool (CLI) static analysis to help developers find potential problems, *code smells*, and security risks in JavaScript code.
 
 ## ✨ Features
 
@@ -16,8 +16,10 @@
 
    ```bash
    cd ~/Code
-   git clone https://github.com/sakhandaru/Aicodecheker.git
-   cd Aicodecheker
+   git clone https://github.com/sakhandaru/AicodeChecker
+.git
+   cd AicodeChecker
+
    ```
 
 2. Install dependencies:
@@ -32,20 +34,20 @@
    npm link
    ```
 
-> **Note**: After running `npm link`, the `Aicodecheker` command will be available from any directory in your system.
+> **Note**: After running `npm link`, the `AicodeChecker` command will be available from any directory in your system.
 
 ## 🧑‍💻 Usage
 
 Audit a single JavaScript file:
 
 ```bash
-Aicodecheker test/sample.js
+AicodeChecker test/sample.js
 ```
 
 Audit an entire project folder:
 
 ```bash
-Aicodecheker ./src
+AicodeChecker ./src
 ```
 
 ## ✨ Example Output
@@ -73,7 +75,7 @@ If you have ideas for new features (e.g., support for Python, Go, or direct inte
 
 ## 🇮🇩 Versi Bahasa Indonesia
 
-`Aicodecheker` adalah sebuah command-line tool (CLI) static analysis sederhana untuk membantu developer menemukan potensi masalah, *code smell*, dan risiko keamanan dalam kode JavaScript.
+`AicodeChecker` adalah sebuah command-line tool (CLI) static analysis sederhana untuk membantu developer menemukan potensi masalah, *code smell*, dan risiko keamanan dalam kode JavaScript.
 
 ## ✨ Fitur
 
@@ -87,8 +89,10 @@ If you have ideas for new features (e.g., support for Python, Go, or direct inte
 
    ```bash
    cd ~/Code
-   git clone https://github.com/sakhandaru/Aicodecheker.git
-   cd Aicodecheker
+   git clone https://github.com/sakhandaru/AicodeChecker
+.git
+   cd AicodeChecker
+
    ```
 
 2. Install dependencies:
@@ -103,20 +107,20 @@ If you have ideas for new features (e.g., support for Python, Go, or direct inte
    npm link
    ```
 
-> **Catatan**: Setelah `npm link`, command `Aicodecheker` bisa dijalankan dari direktori mana pun di sistem Anda.
+> **Catatan**: Setelah `npm link`, command `AicodeChecker` bisa dijalankan dari direktori mana pun di sistem Anda.
 
 ## 🧑‍💻 Cara Pakai
 
 Jalankan audit pada sebuah file JavaScript:
 
 ```bash
-Aicodecheker test/sample.js
+AicodeChecker test/sample.js
 ```
 
 Audit seluruh folder project:
 
 ```bash
-Aicodecheker ./src
+AicodeChecker ./src
 ```
 
 ## ✨ Contoh Output
