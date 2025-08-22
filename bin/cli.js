@@ -1,17 +1,27 @@
 #!/usr/bin/env node
-import { Command } from "commander";
+import { scanPath } from "../src/utils.js";
 import { analyzeFile } from "../src/analyzer.js";
-import { reportFindings } from "../src/reporter.js";
+import { formatResult, printSummary } from "../src/formatter.js";
+import fs from "fs";
 
-const program = new Command();
+const targetPath = process.argv[2];
 
-program
-  .name("aicodeaudit")
-  .description("🔍 AI Code Audit – simple static analyzer for bad practices & security risks")
-  .argument("<file>", "File yang mau di-audit")
-  .action((file) => {
-    const findings = analyzeFile(file);
-    reportFindings(file, findings);
+if (!targetPath) {
+  console.log("❌ Usage: aicodechecker <file-or-folder>");
+  process.exit(1);
+}
+
+const files = scanPath(targetPath);
+let allResults = [];
+
+for (const file of files) {
+  const code = fs.readFileSync(file, "utf-8");
+  const results = analyzeFile(file, code);
+  allResults.push(...results);
+
+  results.forEach(r => {
+    console.log(formatResult(r));
   });
+}
 
-program.parse(process.argv);
+printSummary(allResults);

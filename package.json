@@ -1,13 +1,16 @@
 {
-  "name": "aicodeaudit",
-  "version": "0.1.0",
-  "description": "🔍 Simple static analyzer untuk mendeteksi bad practices dan risiko keamanan",
+  "name": "aicodechecker",
+  "version": "0.2.0",
+  "description": "Simple CLI tool to check and analyze JS/TS code for potential issues.",
+  "main": "src/analyzer.js",
   "bin": {
-    "aicodeaudit": "./bin/cli.js"
+    "aicodechecker": "bin/cli.js"
   },
   "type": "module",
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
   "dependencies": {
-    "chalk": "^5.3.0",
-    "commander": "^12.0.0"
+    "chalk": "^5.3.0"
   }
 }
