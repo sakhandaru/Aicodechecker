@@ -5,7 +5,7 @@
 `AicodeChecker` is a simple command-line tool (CLI) static analysis to help developers find potential problems, *code smells*, and security risks in JavaScript code.
 
 ## ✨ Features
-
+fhfyfy
 - Detects *hardcoded secrets* (passwords, API keys).
 - Finds insecure function usage like `eval()` and `document.write()`.
 - Easily extendable with new rules.
